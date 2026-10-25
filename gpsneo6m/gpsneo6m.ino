@@ -57,8 +57,8 @@ void loop()
         Serial.println(" m");
 
         Serial.print("Velocidade: ");
-        Serial.print(gps.speed.kmph());
-        Serial.println(" km/h");
+        Serial.print(gps.speed.mps());
+        Serial.println(" m/s");
 
         Serial.print("Satélites: ");
         Serial.println(gps.satellites.value());
@@ -70,5 +70,5 @@ void loop()
         Serial.println("Aguardando sinal GPS...");
     }
 
-    delay(1000);
+    delay(200);
 }

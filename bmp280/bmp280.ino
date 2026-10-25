@@ -13,7 +13,7 @@ void setup() {
 
 
   // Tenta inicializar o BMP280
-  if (!bmp.begin()) {
+  if (!bmp.begin(0x76)) {  
 
     // Se não encontrar o sensor, mostra uma mensagem de erro
     Serial.println("ERRO: BMP280 nao encontrado!");
